@@ -3,6 +3,8 @@ from tools.screenshot_process import screenshot_and_preprocess
 from tools.chrome_search import open_chrome_and_search
 from tools.sms_sender import send_sms_via_adb
 from tools.system_info import get_device_model, get_battery_info, get_device_features, get_storage_info, get_network_info
+from tools.adb_utils import take_screenshot, open_settings, toggle_airplane_mode, increase_volume, decrease_volume, press_power_button, press_home_button, press_back_button
+
 
 # Initialize the FastMCP server with a specific name
 # This name can be used to identify the server instance.
@@ -18,6 +20,16 @@ mcp.tool()(get_battery_info)
 mcp.tool()(get_device_features)
 mcp.tool()(get_storage_info)
 mcp.tool()(get_network_info)
+mcp.tool()(take_screenshot)
+mcp.tool()(open_settings)
+mcp.tool()(toggle_airplane_mode)
+mcp.tool()(increase_volume)
+mcp.tool()(decrease_volume)
+mcp.tool()(press_power_button)
+mcp.tool()(press_home_button)
+mcp.tool()(press_back_button)
+
+
 
 # Start the MCP server  
 if __name__ == "__main__":
