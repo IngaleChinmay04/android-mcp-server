@@ -35,3 +35,15 @@ def press_home_button():
 def press_back_button():
     """Simulates pressing the back button."""
     subprocess.run(['adb', 'shell', 'input', 'keyevent', '4'])   # KEYCODE_BACK
+
+def open_wifi_settings():
+    """Opens the Wi-Fi settings screen."""
+    subprocess.run(['adb', 'shell', 'am', 'start', '-a', 'android.settings.WIFI_SETTINGS'])
+
+def open_bluetooth_settings():
+    """Opens the Bluetooth settings screen."""
+    subprocess.run(['adb', 'shell', 'am', 'start', '-a', 'android.settings.BLUETOOTH_SETTINGS'])
+
+def open_display_settings():
+    """Opens the Display settings screen."""
+    subprocess.run(['adb', 'shell', 'am', 'start', '-a', 'android.settings.DISPLAY_SETTINGS'])
