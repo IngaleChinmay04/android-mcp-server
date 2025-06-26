@@ -12,6 +12,40 @@ The goal is to make it easy for any client supporting MCP (such as Claude Deskto
 
 - **open_chrome_and_search**:  
   Opens the default browser on a connected Android device and performs a Google search for a given query.
+- **screenshot_and_preprocess**:  
+  Takes a screenshot and preprocesses it for further use.
+- **send_sms_via_adb**:  
+  Sends an SMS message via ADB to a specified number.
+- **get_device_model**:  
+  Retrieves the model name of the connected Android device.
+- **get_battery_info**:  
+  Returns battery status and information.
+- **get_device_features**:  
+  Lists hardware/software features supported by the device.
+- **get_storage_info**:  
+  Provides information about device storage usage.
+- **get_network_info**:  
+  Returns details about the device's network connectivity.
+- **take_screenshot**:  
+  Captures a screenshot from the device.
+- **open_settings**:  
+  Opens the main settings app on the device.
+- **toggle_airplane_mode**:  
+  Enables or disables airplane mode.
+- **increase_volume / decrease_volume**:  
+  Adjusts the device's media volume up or down.
+- **press_power_button**:  
+  Simulates pressing the power button.
+- **press_home_button**:  
+  Simulates pressing the home button.
+- **press_back_button**:  
+  Simulates pressing the back button.
+- **open_wifi_settings**:  
+  Opens the Wi-Fi settings screen.
+- **open_bluetooth_settings**:  
+  Opens the Bluetooth settings screen.
+- **open_display_settings**:  
+  Opens the display settings screen.
 - Easily extensible: add more ADB-powered tools as needed (launch apps, take screenshots, etc.)
 - Secure: only exposes specific, whitelisted actions.
 
